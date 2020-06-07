@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1" cellpadding="10">
+    <tr>
+        <th>序号</th>
+        <th>姓名</th>
+        <th>年龄</th>
+    </tr>
+    <tr>
+        <td th:text="${user.u_id}"></td>
+        <td th:text="${user.u_name}"></td>
+        <td th:text="${user.u_age}"></td>
+    </tr>
+</table>
+</body>
+</html>
