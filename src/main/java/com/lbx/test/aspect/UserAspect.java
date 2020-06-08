@@ -20,7 +20,7 @@ public class UserAspect {
 
     private final Logger logger = LoggerFactory.getLogger(UserAspect.class);
 
-    @Pointcut("execution(public * com.lbx.test.service.impl.UserService.*(..))")
+    @Pointcut("execution(public * com.lbx.test.service.impl.*.*(..))")
     public void myAspect() {
     }
 
@@ -41,10 +41,13 @@ public class UserAspect {
         /*
          * 获取request*/
         ServletRequestAttributes requestAttributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
-        HttpServletRequest request = requestAttributes.getRequest();
+        if (requestAttributes != null) {
+            HttpServletRequest request = requestAttributes.getRequest();
+            logger.info("Method:" + request.getMethod());
+            logger.info("URI:" + request.getRequestURI());
+            logger.info("URL:" + request.getRequestURL());
+        }
 
-        logger.info("Method:" + request.getMethod());
-        logger.info("URI:" + request.getRequestURI());
-        logger.info("URL:" + request.getRequestURL());
+
     }
 }
