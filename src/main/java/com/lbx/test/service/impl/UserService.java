@@ -10,7 +10,7 @@ import java.util.Optional;
 /**
  * USER :lvbingxing
  * TIME :Created in 2020/6/7 20:40
- * NOTE:
+ * NOTE:    User 服务层
  */
 @Service
 @Transactional
@@ -27,7 +27,7 @@ public class UserService {
         user.setU_name("黄老邪");
         user.setU_age(40);
         userRep.save(user);
-//        int a=1/0;
+        int a = 1 / 0;
         User user1 = new User();
         user1.setU_name("郭靖");
         user1.setU_age(32);

@@ -3,7 +3,7 @@ package com.lbx.test.utils;
 /**
  * USER :lvbingxing
  * TIME :Created in 2020/6/8 10:53
- * NOTE:
+ * NOTE:    包装返回结果
  */
 public class StuResult<T> {
     private int code;

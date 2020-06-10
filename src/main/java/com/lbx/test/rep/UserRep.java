@@ -7,7 +7,7 @@ import org.springframework.data.jpa.repository.JpaRepository;
 /**
  * USER :lvbingxing
  * TIME :Created in 2020/6/7 20:46
- * NOTE:
+ * NOTE:    spring JPA接口
  */
 public interface UserRep extends JpaRepository<User, Integer> {
 }

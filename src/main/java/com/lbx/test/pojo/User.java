@@ -6,6 +6,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 /**
+ * (User)实体类
  * USER :lvbingxing
  * TIME :Created in 2020/6/7 20:25
  * NOTE:

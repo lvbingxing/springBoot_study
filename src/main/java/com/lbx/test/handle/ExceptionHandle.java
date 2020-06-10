@@ -10,18 +10,19 @@ import org.springframework.web.bind.annotation.ResponseBody;
 /**
  * USER :lvbingxing
  * TIME :Created in 2020/6/9 10:09
- * NOTE:
+ * NOTE:    控制器层 异常捕获
  */
 @ControllerAdvice
 public class ExceptionHandle {
     @ExceptionHandler(Exception.class)
     @ResponseBody
     public StuResult handle(Exception e){
+        /*判断异常是不是 自己创建的*/
         if (e instanceof MyException) {
             MyException myException = (MyException) e;
             return ResultUtil.error(myException.getCode(), myException.getMessage());
         }else {
-            return ResultUtil.error(-1,"系统异常");
+            return ResultUtil.error(-1, e.getMessage());
         }
     }
 }

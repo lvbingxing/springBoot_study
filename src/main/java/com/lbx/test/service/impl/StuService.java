@@ -4,8 +4,6 @@ import com.lbx.test.enums.ResultEnums;
 import com.lbx.test.pojo.Student;
 import com.lbx.test.rep.StuRep;
 import com.lbx.test.utils.MyException;
-import org.springframework.data.jpa.repository.Modifying;
-import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -14,7 +12,7 @@ import java.util.List;
 /**
  * USER :lvbingxing
  * TIME :Created in 2020/6/8 9:36
- * NOTE:
+ * NOTE:    student 服务层
  */
 @Service
 @Transactional
