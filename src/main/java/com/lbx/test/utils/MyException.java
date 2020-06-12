@@ -9,22 +9,19 @@ import com.lbx.test.enums.ResultEnums;
  */
 public class MyException extends RuntimeException {
     private Integer code;
+    private String msg;
 
-    public MyException(String message, Integer code) {
-        super(message);
-        this.code = code;
-    }
     public MyException(ResultEnums enums) {
         super(enums.getMessage());
         this.code = enums.getCode();
+        this.msg = enums.getMessage();
     }
-
 
     public Integer getCode() {
         return code;
     }
 
-    public void setCode(Integer code) {
-        this.code = code;
+    public String getMsg() {
+        return msg;
     }
 }

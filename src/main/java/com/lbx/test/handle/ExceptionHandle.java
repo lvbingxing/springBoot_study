@@ -20,9 +20,9 @@ public class ExceptionHandle {
         /*判断异常是不是 自己创建的*/
         if (e instanceof MyException) {
             MyException myException = (MyException) e;
-            return ResultUtil.error(myException.getCode(), myException.getMessage());
+            return ResultUtil.error(myException.getCode(), myException.getMsg());
         }else {
-            return ResultUtil.error(-1, e.getMessage());
+            return ResultUtil.error(-101, e.getMessage());
         }
     }
 }

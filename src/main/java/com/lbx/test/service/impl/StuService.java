@@ -28,12 +28,12 @@ public class StuService {
 
     }
 
-    public Student findById(Integer id) throws MyException {
+    public Student findById(Integer id) {
 
         if (!stuRep.findById(id).isEmpty()) {
             return stuRep.findById(id).get();
-        }else {
-        throw new MyException(ResultEnums.EXIST_ERROR);
+        } else {
+            throw new MyException(ResultEnums.EXIST_ERROR);
         }
     }
 

@@ -6,12 +6,15 @@ package com.lbx.test.enums;
  * NOTE:    封装枚举类型
  */
 public enum ResultEnums {
-    UNKNOWN_ERROR(-1,"未知错误"),
-    SUCCESS(0,"成功"),
-    EXIST_ERROR(-101,"数据不存在")
-    ;
+    UNKNOWN_ERROR(-1),
+    SUCCESS(100, "成功"),
+    EXIST_ERROR(-101, "数据不存在");
     Integer code;
     String message;
+
+    ResultEnums(Integer code) {
+        this.code = code;
+    }
 
     ResultEnums(Integer code, String message) {
         this.code = code;
