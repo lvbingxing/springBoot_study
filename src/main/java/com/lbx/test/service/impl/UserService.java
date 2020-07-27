@@ -11,9 +11,10 @@ import java.util.Optional;
  * USER :lvbingxing
  * TIME :Created in 2020/6/7 20:40
  * NOTE:    User 服务层
+ * @author 吕冰星
  */
 @Service
-@Transactional
+@Transactional(rollbackFor = Exception.class)
 public class UserService {
     final
     UserRep userRep;

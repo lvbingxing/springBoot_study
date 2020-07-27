@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * USER :lvbingxing
  * TIME :Created in 2020/6/9 10:09
  * NOTE:    控制器层 异常捕获
+ * @author 吕冰星
  */
 @ControllerAdvice
 public class ExceptionHandle {

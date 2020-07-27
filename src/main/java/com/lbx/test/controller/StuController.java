@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * USER :lvbingxing
+ * @author  :吕冰星
  * TIME :Created in 2020/6/7 20:53
  * NOTE:    student控制器
  */
@@ -25,8 +25,7 @@ public class StuController {
         this.stuService = stuService;
     }
 
-    /*
-     * 查找所有*/
+    /** 查找所有*/
     @GetMapping("/findAll")
     public StuResult findAll(Map map) {
         List<Student> list = stuService.findAll();
@@ -35,15 +34,13 @@ public class StuController {
         return stuResult;
     }
 
-    /*
-     * 通过ID查找*/
+    /** 通过ID查找*/
     @GetMapping("/findOne/{id}")
     public StuResult findOne(@PathVariable("id") Integer id) {
         return ResultUtil.success(stuService.findById(id));
     }
 
-    /*
-     * 更新某个用户    参数包括ID即是更新  没有则是插入*/
+    /** 更新某个用户    参数包括ID即是更新  没有则是插入*/
     @PostMapping("/updateOne")
     public StuResult updateOne(Student student) {
         return ResultUtil.success(stuService.updateStu(student));

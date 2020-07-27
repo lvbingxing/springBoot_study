@@ -13,9 +13,10 @@ import java.util.List;
  * USER :lvbingxing
  * TIME :Created in 2020/6/8 9:36
  * NOTE:    student 服务层
+ * @author 吕冰星
  */
 @Service
-@Transactional
+@Transactional(rollbackFor =Exception.class)
 public class StuService {
     private final StuRep stuRep;
 

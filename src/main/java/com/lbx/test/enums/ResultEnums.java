@@ -4,6 +4,7 @@ package com.lbx.test.enums;
  * USER :lvbingxing
  * TIME :Created in 2020/6/9 10:16
  * NOTE:    封装枚举类型
+ * @author 吕冰星
  */
 public enum ResultEnums {
     UNKNOWN_ERROR(-1),

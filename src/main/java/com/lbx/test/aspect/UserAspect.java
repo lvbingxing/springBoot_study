@@ -14,6 +14,7 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 import javax.servlet.http.HttpServletRequest;
 
 /*
+ * @author :吕冰星
  * 切面类  为了获取请求相关数据，并打印数据到文件  具体配置见application.yml
  * */
 

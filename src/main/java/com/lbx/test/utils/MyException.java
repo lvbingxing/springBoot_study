@@ -6,6 +6,7 @@ import com.lbx.test.enums.ResultEnums;
  * USER :lvbingxing
  * TIME :Created in 2020/6/9 9:42
  * NOTE:    自己创建的异常类 只包含 code 和 msg
+ * @author 吕冰星
  */
 public class MyException extends RuntimeException {
     private Integer code;

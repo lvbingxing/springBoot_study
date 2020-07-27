@@ -8,7 +8,8 @@ import javax.persistence.Id;
 /**
  * (Student)实体类
  *
- * @author lvBingXing
+ *
+ * @author 吕冰星
  * @since 2020-06-08 09:32:57
  */
 @Entity

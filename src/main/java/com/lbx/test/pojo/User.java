@@ -10,6 +10,7 @@ import javax.persistence.Id;
  * USER :lvbingxing
  * TIME :Created in 2020/6/7 20:25
  * NOTE:
+ * @author 吕冰星
  */
 @Entity
 public class User {

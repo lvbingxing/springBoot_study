@@ -6,6 +6,7 @@ import com.lbx.test.enums.ResultEnums;
  * USER :lvbingxing
  * TIME :Created in 2020/6/8 10:56
  * NOTE:    返回结果 静态方法
+ * @author 吕冰星
  */
 public class ResultUtil {
     public static StuResult success(Object object) {
